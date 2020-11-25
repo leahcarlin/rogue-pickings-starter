@@ -1,4 +1,4 @@
-/* MOBILE */
+/* ----------- Mobile ----------- */
 body {
 	width: 100%;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -68,6 +68,7 @@ header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
 }
+/*MOBILE BODY*/
 .top-section {
 	width: 100%;
 	display: flex;
@@ -107,6 +108,7 @@ header nav ul li a {
 .menu li {
 	padding: 5px;
 }
+/*MOBILE FOOTER*/
 footer {
 	width: 100%;
 	height: 50px;
@@ -119,4 +121,52 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width: 768px) {
+	body {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+  	}
+  	.bottom-section {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		text-align: left;
+		border: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex: 1 3 33.33%;
+	}
+	.section-one {
+	padding: 10px 30px 0 0;
+	}
+	.section-two,
+	.section-three {
+		padding: 10px 30px;
+	}
+	.section-two {
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+	}
+	.reviews {
+		font-size: 1em;
+	}
+	footer {
+		border-top: 1px solid gray;
+	}
+}
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width: 1200px) {
+  body {
+}
 }
